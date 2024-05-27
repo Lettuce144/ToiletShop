@@ -75,7 +75,7 @@ final class Database
      * The GetAllUsers method retrieves all users from the webshop.
      * @return array An array of all users.
      */
-    public static function GetAllUsers(): array
+    public static function GetAllUsers(): array | bool
     {
         return self::query("SELECT * FROM users");
     }

@@ -1,15 +1,19 @@
 <?php
 // Create an auth class that will handle all authentication
 namespace Auth {
+    @require(__DIR__.'/../db/Database.php');
+
+    // Make sure that the session is started before doing anything related to authentication
+    if (session_status() !== PHP_SESSION_ACTIVE) @session_start();
 
     use Database;
     use PDO;
 
     // Create a function that will check if the user is logged in
-    function check(): bool
+    function isloggedin(): bool
     {
         // Check if the session is set
-        if (isset($_SESSION['user'])) {
+        if (isset($_SESSION['user']) && $_SESSION['user'] != 'Guest') {
             return true;
         } else {
             return false;
@@ -36,11 +40,18 @@ namespace Auth {
         }
     }
 
-    function register($username, $password): bool
+    //username is email
+    function register($username, $password, $firstname, $lastname, $address): bool
     {
         $hashed = password_hash($password, PASSWORD_DEFAULT);
         Database::query("INSERT INTO users (name, password) VALUES ('$username', '$hashed')");
+        Database::query("INSERT INTO klanten (voornaam, achternaam, adres) VALUES ('$firstname', '$lastname', '$address'");
         return Database::get();
+    }
+
+    function guest()
+    {
+        $_SESSION['user'] = 'Guest';
     }
 
 // Create a function that will log the user out
