@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="026c658d-dde3-48ec-9956-68fd2c6d90ec" name="XAMPP" url="http://localhost/ToiletShop">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\ToiletShop" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

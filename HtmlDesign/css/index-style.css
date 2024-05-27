@@ -1,0 +1,34 @@
+/* Content specific*/
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 100%;
+    width: 100vw;
+    background-image: url('https://wallpapers.com/images/hd/banner-background-b5a2ptzqzslvvuvv.jpg');
+    background-position: center;
+    background-color: #C6F8FF;
+    border-radius: 10px;
+}
+
+#newsletter-combo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#newsletter-combo p{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#newsletter{
+    background-color: antiquewhite;
+    /* width: 50%; */
+    padding: 2em;
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De toilet shop</title>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+  />
+  <link rel="stylesheet" href="css/bulma-custom.css">
+</head>
+<body>
+<!-- Header here -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <h1 class="logo">Toilet & Co</h1>
+    </a>
+
+    <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item"> Home </a>
+
+      <a class="navbar-item"> Shop </a>
+
+      <a class="navbar-item"> Contact </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> More </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"> About </a>
+          <a class="navbar-item is-selected"> Jobs </a>
+          <a class="navbar-item"> Contact </a>
+          <hr class="navbar-divider" />
+          <a class="navbar-item"> Report an issue </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                      fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a class="button is-light"> Log in </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Main content here -->
+<main id="main" class="section">
+  <section class="hero is-fullheight-with-navbar">
+    <div class="hero-body is-flex is-centered">
+      <form class="container is-max-desktop box">
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="e.g. alex@example.com" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" type="password" placeholder="********" />
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <label for="" class="checkbox is-expanded">
+            <input type="checkbox">
+            Remember me
+          </label>
+          <p class="help">No account? Sign up here</p>
+        </div>
+
+        <div class="field">
+          <button class="button is-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<!--
+    <footer class="footer">
+      <div class="notification is-primary content">
+        <div id="footer-links">
+          <ul class="links-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="links-list">
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://icons.veryicon.com/png/o/miscellaneous/unicons/cart-38.png"
+                  alt="cart"
+                  width="32"
+                  height="32"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="footer-info">
+          <p>&copy; 2024 De toilet shop</p>
+        </div>
+      </div>
+    </footer> -->
+
+<footer class="footer is-primary">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+      The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+      website content is licensed
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+      >CC BY NC SA 4.0</a
+      >.
+    </p>
+  </div>
+</footer>
+
+<script src="js/bulma.js">
+</script>
+<!-- Footer here -->
+</body>
+</html>

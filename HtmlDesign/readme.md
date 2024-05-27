@@ -1,0 +1,1 @@
+# This directory is for the style, this will later be translated to php

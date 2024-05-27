@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root{
+    --toilet-primary-background: #C6F8FF;
+    --bulma-navbar-item-color: #acd6dc;
+}
+
+.navbar{
+    --bulma-scheme-main: var(--toilet-primary-background);
+    --bulma-navbar-padding-vertical: 1.5rem;
+}
+
+.banner{
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://st4.depositphotos.com/16122460/19920/i/450/depositphotos_199209306-stock-photo-new-ceramic-toilet-bowl-grey.jpg");
+}
+
+.footer{
+    --bulma-footer-background-color: var(--toilet-primary-background);
+    --bulma-footer-padding-vertical: 1.5rem;
+}
+
+.card{
+    --bulma-card-shadow: 0;
+    max-width: 256px;
+    border: 1px solid #e8e8e8;
+    transition: .4s;
+}
+
+.card:hover{
+    --bulma-card-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    color: #6EA5FF;
+    font-family: 'Permanent Marker';
+    font-size: 1.5rem;
+    -webkit-text-stroke: #5d8cd6 1px;
+}
+
+/* Bulma doesn't have a flex gap */
+.newsletter{
+    gap: 1rem;
+}
+
+@media screen and (max-width: 769px){
+    #filters-text{
+        display: none;
+        position: absolute;
+    }
+
+    .card{
+        display: flex !important;
+        max-width: 512px;
+    }
+}
